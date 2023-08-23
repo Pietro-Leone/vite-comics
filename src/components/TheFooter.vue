@@ -59,7 +59,7 @@ export default {
         <div class="credits d-flex py-4">
           <div v-for="credit in credits" class="pe-4">
             <h5 class="text-uppercase">{{ credit.title }}</h5>
-            <ul class="list-unstyled py-2">
+            <ul class="list-unstyled m-0 py-2">
               <li v-for="element in credit.elements">
                 <a href="#" class="text-capitalize">{{ element }}</a>
               </li>
@@ -96,13 +96,12 @@ export default {
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 405px;
 }
 
 .credits {
   flex-direction: column;
   flex-wrap: wrap;
-  height: 405px;
+  height: 380px;
 
   h5 {
     font-weight: bold;
@@ -136,7 +135,7 @@ export default {
   background-image: url("../assets/img/dc-logo-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  height: 405px;
+  height: 380px;
   width: 600px;
   right: 0;
 }
