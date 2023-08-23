@@ -56,12 +56,12 @@ export default {
 
     <div class="credits-container">
       <div class="container d-flex justify-content-between position-relative">
-        <div class="credits d-flex p-4">
-          <div v-for="credit in credits" class="px-3">
+        <div class="credits d-flex py-4">
+          <div v-for="credit in credits" class="pe-4">
             <h5 class="text-uppercase">{{ credit.title }}</h5>
             <ul class="list-unstyled py-2">
               <li v-for="element in credit.elements">
-                <a href="#">{{ element }}</a>
+                <a href="#" class="text-capitalize">{{ element }}</a>
               </li>
             </ul>
           </div>
@@ -72,7 +72,17 @@ export default {
 
     <div class="contacts-container">
       <div class="container">
-
+        <div class="d-flex justify-content-between">
+          <button type="button" class="btn btn-outline-primary text-uppercase">sign-up now!</button>
+          <div class="d-flex align-items-center">
+            <h4>Follow US</h4>
+            <img src="../assets/img/footer-facebook.png" alt="icon">
+            <img src="../assets/img/footer-twitter.png" alt="icon">
+            <img src="../assets/img/footer-youtube.png" alt="icon">
+            <img src="../assets/img/footer-pinterest.png" alt="icon">
+            <img src="../assets/img/footer-periscope.png" alt="icon">
+          </div>
+        </div>
       </div>
     </div>
 
@@ -86,13 +96,13 @@ export default {
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
+  height: 405px;
 }
 
 .credits {
   flex-direction: column;
   flex-wrap: wrap;
-  height: 450px;
+  height: 405px;
 
   h5 {
     font-weight: bold;
@@ -100,11 +110,33 @@ export default {
   }
 }
 
+.contacts-container {
+  background-color: $color-secondary;
+  padding: 2rem 0;
+
+  button {
+    color: white;
+    border-radius: 0;
+  }
+
+  h4 {
+    color: $color-primary;
+    text-transform: uppercase;
+    margin: 0;
+    width: 100%;
+  }
+
+  img {
+    margin: 0 .5rem;
+    width: 40px;
+  }
+}
+
 .dc-bg {
   background-image: url("../assets/img/dc-logo-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  height: 450px;
+  height: 405px;
   width: 600px;
   right: 0;
 }
