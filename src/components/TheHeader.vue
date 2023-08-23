@@ -21,6 +21,7 @@ export default {
 
 <template>
   <header>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="../assets/img/dc-logo.png" alt="logo" style="width: 80px;"></a>
@@ -38,7 +39,10 @@ export default {
         </div>
       </div>
     </nav>
+
   </header>
+
+  <div class="jumbotron"></div>
 </template>
 
 <style lang="scss" scoped>
@@ -71,5 +75,12 @@ export default {
       background-color: $color-primary;
     }
   }
+}
+
+.jumbotron {
+  background-image: url("../assets/img/jumbotron.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
 }
 </style>
